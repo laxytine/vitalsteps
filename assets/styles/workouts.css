@@ -1,0 +1,36 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#workout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#workout-container > div {
+  flex: 1;
+  overflow: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.table {
+  margin-top: 20px;
+}
