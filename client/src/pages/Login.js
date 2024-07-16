@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import UserContext from '../UserContext';
 import '../assets/styles/login.css';
+import Banner from "../assets/images/home.png";
+
 
 export default function Login() {
   const { setUser } = useContext(UserContext);
@@ -98,7 +100,7 @@ export default function Login() {
           id: data._id,
         });
 
-        navigate('/'); // Example navigation after successful login
+        navigate('/'); // Redirect to home page
       })
       .catch((error) => {
         console.error('Error retrieving user details:', error);
@@ -112,7 +114,9 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <div className="left-column"></div>
+      <div className="left-column">
+        <img src={Banner} alt="banner" className="img-fluid" />
+      </div>
       <div className="login-form">
         <h2 className="title text-center">
           <span className="text-warning">LOG</span>IN

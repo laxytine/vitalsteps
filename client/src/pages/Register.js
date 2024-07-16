@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import '../assets/styles/register.css';
 import { Link } from 'react-router-dom';
+import Banner from "../assets/images/home.png";
 
 export default function Register() {
   const [name, setRegisterName] = useState('');
@@ -53,7 +54,9 @@ export default function Register() {
 
   return (
     <div className="register-container">
-      <div className="left-column"></div>
+      <div className="left-column">
+        <img src={Banner} alt="banner" className="img-fluid" />
+      </div>
       <div className="register-form">
           <h2 className="title text-center">
             <span className="text-warning">CREATE</span>ACCOUNT
